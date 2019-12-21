@@ -1,0 +1,141 @@
+/*
+ Theme Name:   Barker GP Child
+ Theme URI:    https://generatepress.com
+ Description:  Default Generate Press child
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+/* Assign color variables */
+:root {
+	--dark-blue: #242743;
+}
+/* Make the 2 header widgets conrolled by flex */
+.header-widget {
+	display: flex;
+	padding: 8px 15px;
+	max-width: 100%;
+	width: 60vw;
+	justify-content: flex-end;
+	flex-flow: row wrap;
+}
+.header-widget aside:nth-child(1) {
+	flex-basis: 40%;
+	margin-right: 10px;
+}
+.header-widget aside:nth-child(2) {
+	margin-right: 10px;
+}
+.header-widget .widget {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.header-widget p {
+	margin-bottom: 0;
+}
+/* Align breadcrumbs with container */
+#bread-flex {
+	display: flex;
+	justify-content: center;
+}
+#bread-flex span {
+	width: 1100px;
+	font-size: .85em;
+}
+#wysiwyg_widgets_widget-2 p {
+	margin-bottom: 0;
+	color: orange;
+}
+/* Text sizes */
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+	color: black;
+}
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+	color: black;
+}
+h4 {
+	margin-bottom: 0;
+}
+/* Hero image title */
+.hero-title h1 {
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+	text-shadow: 2px 2px 0 black;
+	box-shadow: -5px -3px 5px var(--light-gray,gray);
+	background-color: var(--light-gray,gray);
+	display: inline-block;
+}
+.hero-title p {
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	text-shadow: 1px 1px 0 black;
+	background-color: var(--light-gray,gray);
+	display: table-cell;
+}
+.footer-widgets p, td {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+/* Footer widget spacing */
+.footer-widgets .widget-title {
+	margin-bottom: 10px;
+}
+/* Set background color for header */
+.main-navigation, .inside-header, .site-header {
+	background-color: var(--dark-blue, DarkBlue);
+}
+/* Make logo absolute */
+.main-navigation .navigation-logo {
+    position: absolute ;
+    left: 0;
+    top: 0;
+}
+/* Set logo height */
+.main-navigation .navigation-logo img {
+	height: 98px;
+	padding: 0 !important;
+	z-index: 99;
+}
+/* Shift menu over to allow for logo being absolute */
+.main-nav {
+	margin-left: 150px;
+}
+/* Social icon margins */
+.inside-header {
+	padding: 0;
+}
+/* make ghe margins a little smaller than default */
+input.search-field {
+	padding: 8px 15px;
+}
+.navigation-search {
+	margin-left: 120px;
+}
+/* Arrange image blocks */
+.db-grid-column .wp-block-column {
+	display: grid;
+	grid-template-rows: 200px 40px 100px;
+}
+/* Sets the right margin for the mobile hamburger icon */
+@media (max-width: 768px) {
+.menu-logo .main-navigation:not(.mobile-header-navigation) .menu-toggle {
+	margin-right: 5vw;
+	}
+.header-widget {
+	width: 85vw;
+	margin-left: 10vw;
+	}
+}
+/* Set the line height for mobile menu drop down list */
+@media (max-width: 768px) {
+.main-navigation .main-nav ul li a {
+	line-height: 30px;
+	}
+}
