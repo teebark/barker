@@ -11,6 +11,17 @@
 :root {
 	--dark-blue: #242743;
 }
+/* Don't show breadcrumbs on home page */
+.home #bread-flex {
+	display: none;
+}
+/* Get rid of hero image top margin on home page */
+.home .inside-article {
+	padding-top: 0;
+}
+.home #main {
+	margin-top: 0;
+}
 /* Make the 2 header widgets conrolled by flex */
 .header-widget {
 	display: flex;
@@ -34,6 +45,21 @@
 .header-widget p {
 	margin-bottom: 0;
 }
+/* Get rid of secondary hamburger menu */
+.secondary-navigation .menu-toggle {
+      display: none;
+}
+/* Only show seconcdary menu if on family menu */
+.secondary-navigation {
+    display: none;
+}
+.category-family-events  .secondary-navigation,
+.category-barker-family  .secondary-navigation,
+.category-cauthen-family .secondary-navigation,
+.category-davis-family   .secondary-navigation,
+.category-patton-family  .secondary-navigation {
+    display: block;
+}
 /* Align breadcrumbs with container */
 #bread-flex {
 	display: flex;
@@ -46,6 +72,16 @@
 #wysiwyg_widgets_widget-2 p {
 	margin-bottom: 0;
 	color: orange;
+}
+/* Add bullets to family sidebar */
+/*
+#menu-family li {
+	list-style-type: disc;
+}
+*/
+/* Limit featured image size */
+.page-header-image-single img {
+    max-width: 600px;
 }
 /* Text sizes */
 h1 {
@@ -78,6 +114,37 @@ h4 {
 	text-shadow: 1px 1px 0 black;
 	background-color: var(--light-gray,gray);
 	display: table-cell;
+}
+/* Arrange show-posts entries for desktop and tablet */
+@media (min-width: 769px) {
+	.wpsp-align-posts .wp-show-posts-inner {
+		display: grid;
+		grid-template-columns:  1fr 3fr;
+		grid-template-rows: auto auto 1fr auto;
+	}
+	.wpsp-align-posts .wp-show-posts-inner header {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		margin-bottom: 5px;
+	}
+	.wpsp-align-posts .wp-show-posts-inner .wp-show-posts-image {
+		grid-column: 1 / 2;
+		grid-row: 1 / 4;
+	}
+	.wpsp-align-posts .wp-show-posts-inner .wp-show-posts-entry-summary {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		margin-bottom: 5px;
+	}
+	.wpsp-align-posts .wp-show-posts-inner .wpsp-read-more {
+		grid-column: 2 / 3;
+		grid-row: 3 / 4;
+	}
+	.wpsp-align-posts .wp-show-posts-inner .wpsp-read-more a {
+		padding: 0;
+		border: 0;
+		color: gray;
+	}
 }
 .footer-widgets p, td {
 	font-size: 16px;
@@ -123,7 +190,7 @@ input.search-field {
 	display: grid;
 	grid-template-rows: 200px 40px 100px;
 }
-/* Sets the right margin for the mobile hamburger icon */
+/* Sets the right margin for the mobile hamburger icon --------------------------------------------*/
 @media (max-width: 768px) {
 .menu-logo .main-navigation:not(.mobile-header-navigation) .menu-toggle {
 	margin-right: 5vw;
