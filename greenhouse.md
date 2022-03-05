@@ -1,8 +1,8 @@
 # Using a greenhouse to keep plants outside during the winter
 
-So, I got tired of bringing the plants inside the house every Fall. Several of them are pretty large (and heavy), you can't see where you're going when you're carrying them, and once they're in (for several months), they block access to doorways.
+So, I got tired of bringing the plants inside the house every Fall. Several of them are pretty large (and heavy), and since you can't see where you're going when carrying them, and sometimes you have to place them where they block access to doorways.
 
-Christmas was on the horizon, so I got the bright idea of killing two birds with one stone. A little research found me a popup greenhouse for a reasonable price. I found one on [Amazon](https://www.amazon.com/gp/product/B07YTNMCVC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) that looked promising. Six feet by eight feet, for only $165. Perfect.
+This year, Christmas was on the horizon, so I got the bright idea of killing two birds with one stone. A little research found me a popup greenhouse for a reasonable price. I found one on [Amazon](https://www.amazon.com/gp/product/B07YTNMCVC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) that looked promising. Six feet by eight feet, for only $165. Perfect.
 
 That would solve my problem for n ow, but what about when it gets cold? I googled again, for possible sources of heat-that included a compost pile (not enough room), gas heat (too dangerous), and heat sinks (too passive). I settled on electric heat, even though I knew that would drive up our electricity bill. But, would it be worth the extra cost?
 
